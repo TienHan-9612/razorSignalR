@@ -1,0 +1,40 @@
+﻿@page
+<div class="container">  
+    <div class="row p-1">
+        <div class="col-6">
+            <div class="row p-1">
+                <div class="col-7">Quizz Session Id</div>
+                <div class="col-5"><input type="text" class="w-100" id="sessionInput" /></div>
+            </div>
+            <div class="row p-1">
+                <div class="col-7">Name</div>
+                <div class="col-5"><input type="text" class="w-100" id="nameInput" /></div>
+            </div>
+            <div class="row p-7">
+                <div class="col-6 text-end">
+                    <input type="button" id="connectButton" value="Connect Quizz Session" />
+                </div>
+            </div>
+            <div class="row p-12">
+                <div class="col-12">
+                    <hr />
+                </div>
+            </div>
+            <div class="row p-7">
+                <div class="col-6">
+                    <ul id="questions"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row p-1">
+                <div class="col-6">
+                    <ul id="participantion"></ul>
+                </div>
+            </div>
+        </div>        
+    </div>
+   
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
